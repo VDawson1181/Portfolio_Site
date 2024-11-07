@@ -1,0 +1,101 @@
+
+.PkgBlogHidden{
+    display: none;
+}
+
+.PkgBlogMain{
+    h2.clicker{
+        /* position: sticky;
+        top: 0px; */
+        font-size: 1.25em;
+        text-transform: uppercase;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+        padding: 0 0 5px;
+        /* backdrop-filter: blur(15px); */
+        /* z-index: 99; */
+        cursor: pointer;
+    }
+
+    .PkgBlogInner{
+        font-family: Arial, Helvetica, sans-serif;
+        width: 750px;
+        background-color: beige;
+        min-height: 100vh;
+        margin: 0 auto;
+        padding: 25px;
+        border-bottom: 2px solid #999;
+        transition: all 0.5 ease;
+
+        &.pkgOpen{
+            display: grid;        
+            justify-content: center;
+            justify-content: center;
+            align-items: top;
+            gap: 0px;
+            opacity: 1;
+        }
+
+        &.pkgClosed{
+            display: none;
+            opacity: 0;
+        }
+
+
+        & .PkgBlog_Markup{
+            div{
+                /* display: flex;
+                flex-direction: column;
+                justify-content: center; */
+                /* align-items: center; */
+                margin-bottom: 50px;
+                
+                img{
+                    margin: 0 auto;
+                }
+                ul li {
+                    list-style: none;
+                }
+                ol li {
+                    padding: 0 0 15px;
+                }
+                p{
+                    font-size: 0.95rem;
+                    text-align: left;
+                    text-shadow: 2px 2px 3px hsla(0, 0%, 100%, 0.95);   
+                    
+                }
+                .lrgtxt{
+                    font-weight: bold;
+                }
+
+                .redCpy{
+                    color: rgb(255, 0, 0);
+                    font-weight: bold;
+                }
+            }
+        } 
+        
+    }
+
+}
+
+#positiveImpact .PkgBlog_Markup li div:nth-of-type(1),
+#positiveImpact .PkgBlog_Markup li div:nth-of-type(2),
+#positiveImpact .PkgBlog_Markup li div:nth-of-type(3){
+    width: 510px;
+    margin: 0 auto;
+}
+
+#positiveImpact .PkgBlog_Markup li div:nth-of-type(3) img {
+	min-height: 783px;
+	margin-top: -11px;
+}
+#positiveImpact .PkgBlog_Markup li div:nth-of-type(1) p,
+#positiveImpact .PkgBlog_Markup li div:nth-of-type(2) p{
+    display: none;
+}
+#positiveImpact .PkgBlog_Markup li div:nth-of-type(3) p{
+    margin-bottom: 50px;
+}

@@ -1,0 +1,125 @@
+
+.PkgArticleHidden{
+    display: none;
+}
+.pkgArticleMain{
+    h2.clicker{
+        /* position: sticky;
+        top: 0px; */
+        font-size: 1.25em;
+        text-transform: uppercase;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+        padding: 0 0 5px;
+        /* backdrop-filter: blur(15px); */
+        /* z-index: 99; */
+        cursor: pointer;
+    }
+
+    .pkgArticleInner{
+        font-family: Arial, Helvetica, sans-serif;
+        /* background-color: hsl(0, 0%, 10%); */
+        /* box-sizing: border-box;
+        background-image: url('./../../assets/random-institute-Bkgrnd.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; */
+        width: 100vw;
+        /* min-height: 100vh; */
+        min-width: 750px;
+        margin: 0;
+        padding: 0 0 50px;
+        
+        border-bottom: 2px solid #999;
+        transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+        transform-origin: center top;
+
+
+        &.pkgOpen{
+            display: grid;
+            justify-content: center;
+            align-items: top;
+            grid-template-columns: minmax(10px, 2fr) 3fr;
+            gap: 0px;
+            opacity: 1;
+        }
+
+        &.pkgClosed{
+            display: none;
+            opacity: 0;
+        }
+
+
+        .pkgArticle_PackageDescription{
+            position: relative;
+            
+            aside{
+                position: sticky;
+                top: 15px;
+                text-align: center;
+                backdrop-filter: blur(15px);
+                border-radius: 0 20px 20px 0;
+                border: 2px solid hsla(0, 0%, 0%, 0.5);
+                border-left: none;
+                padding: 20px;
+                z-index: 85;
+                /* padding: 10px 5px; */
+                /* position: fixed; */
+
+                h1{
+                    /* grid-column-start: 1;
+                    grid-column-end: 3; */
+            
+                    font-size: 1.5rem;
+                    color: #000;
+                    /* font-weight: bold; */
+                    text-shadow: 3px 3px 5px hsla(0, 0%, 100%, 0.75);
+                    text-align: center;
+                    /* text-transform: uppercase; */
+                    margin: 0;
+                }
+            }
+        }
+
+        .pkgArticle_PackageRundown li {
+            list-style: none;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 50px;
+
+                p{
+                    font-size: 0.95rem;
+                    text-align: center;
+                    text-shadow: 2px 2px 3px hsla(0, 0%, 100%, 0.95);
+                    max-width: 550px;
+                }
+            }
+        }
+    }
+
+}
+
+#positiveImpact .pkgArticle_PackageRundown li div:nth-of-type(1),
+#positiveImpact .pkgArticle_PackageRundown li div:nth-of-type(2),
+#positiveImpact .pkgArticle_PackageRundown li div:nth-of-type(3){
+    width: 510px;
+    margin: 0 auto;
+}
+
+#positiveImpact .pkgArticle_PackageRundown li div:nth-of-type(3) img {
+	min-height: 783px;
+	margin-top: -11px;
+}
+#positiveImpact .pkgArticle_PackageRundown li div:nth-of-type(1) p,
+#positiveImpact .pkgArticle_PackageRundown li div:nth-of-type(2) p{
+    display: none;
+}
+#positiveImpact .pkgArticle_PackageRundown li div:nth-of-type(3) p{
+    margin-bottom: 50px;
+}
