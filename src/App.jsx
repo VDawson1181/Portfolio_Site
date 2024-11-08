@@ -56,7 +56,7 @@ function App() {
         
       <section id="MainPage">
         <div className="mainHeader">
-          <h1>VDawson647 <span>-Portfolio site-</span></h1>
+          <h1>Val Dawson's <span>-Portfolio site-</span></h1>
         </div>
         <div className="mainDescription">
           <p>Hi, I'm Valmon Dawson — A UI/UX centered Front-End Developer</p>
