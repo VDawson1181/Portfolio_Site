@@ -78,6 +78,7 @@ background: linear-gradient(348deg, rgba(0,0,0,1) 0%, rgba(9,121,75,1) 50%, rgba
     backdrop-filter: blur(5px); */
 
     h1{
+      display: inline;
       font-size: 8vw;
       line-height: 6vw;
       paint-order: stroke fill;
@@ -220,7 +221,6 @@ background: linear-gradient(348deg, rgba(0,0,0,1) 0%, rgba(9,121,75,1) 50%, rgba
   padding: 10px;
 
   & > h1{
-    display: inline;
     font-size: 30px;
     margin: 0;
     padding: 10px;
