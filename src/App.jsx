@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+import woodlockedLogo from './assets/woodlocked_Scr.png'
 import viteLogo from '/vite.svg'
 import vdResume from '/VDawson647_Resume.pdf'
 import DigitalClockApp from '../components/DigitalClock/DigitalClockApp'
@@ -11,8 +12,8 @@ function App() {
     //Random Image -- https://picsum.photos/150/150
 
   const professional = [
-    {name: "Woodlocked", copy: "Construction Company Site", url: "https://vdawson1181.github.io/WoodlockedProj/index.html", isValid: true, image: "./Portfolio_Site/src/assets/woodlocked_Scr.png"},
-    {name: "Prize Matcher", copy: "Publishers Clearing House Interactive Prize Component", url: "https://vdawson1181.github.io/portfolio-files/PrizeMatcher_Component/pm_LB_Component.html", isValid: true, image: "./Portfolio_Site/src/assets/prizeMatcher_Scr.png"},
+    {name: "Woodlocked", copy: "Construction Company Site", url: "https://vdawson1181.github.io/WoodlockedProj/index.html", isValid: true, image: woodlockedLogo},
+    {name: "Prize Matcher", copy: "Publishers Clearing House Interactive Prize Component", url: "https://vdawson1181.github.io/portfolio-files/PrizeMatcher_Component/pm_LB_Component.html", isValid: true, image: "./src/assets/prizeMatcher_Scr.png"},
     {name: "Money Drop", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/MoneyDrop/page1.html", isValid: true, image: "./src/assets/moneyDrop_Scr.png"},
     {name: "Money Tree", copy: "Publishers Clearing House E-Commerce Component", url: "https://vdawson1181.github.io/portfolio-files/money-tree-OB-addOn/preview.html", isValid: true, image: "./src/assets/moneyTree_Scr.png"},
     {name: "Important Info", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Important_Info/page1.html", isValid: true, image: "./src/assets/impInfo_Scr.png"},
