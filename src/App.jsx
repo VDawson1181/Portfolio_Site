@@ -1,7 +1,19 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import woodlockedLogo from './assets/woodlocked_Scr.png'
 import viteLogo from '/vite.svg'
+// image import
+import woodlockedLogo from './assets/woodlocked_Scr.png'
+import prizeMatcherLogo from './assets/prizeMatcher_Scr.png'
+import moneyDropLogo from './assets/moneyDrop_Scr.png'
+import moneyTreeLogo from './assets/moneyTree_Scr.png'
+import impInfoLogo from './assets/impInfo_Scr.png'
+import makeItCountLogo from './assets/makeItCount_Scr.png'
+import winTonightLogo from './assets/win1MMTonight_Scr.png'
+import dayOfDealsLogo from './assets/dayOfdeals_Scr.png'
+import prizePayTransLogo from './assets/prizePayTrans_Scr.png'
+import outrunLogo from './assets/outrun_Scr.png'
+import bubblesLogo from './assets/bubbles_Scr.png'
+import jokesLogo from './assets/dadJoke_Scr.png'
 import vdResume from '/VDawson647_Resume.pdf'
 import DigitalClockApp from '../components/DigitalClock/DigitalClockApp'
 import Card from './Card'
@@ -13,19 +25,19 @@ function App() {
 
   const professional = [
     {name: "Woodlocked", copy: "Construction Company Site", url: "https://vdawson1181.github.io/WoodlockedProj/index.html", isValid: true, image: woodlockedLogo},
-    {name: "Prize Matcher", copy: "Publishers Clearing House Interactive Prize Component", url: "https://vdawson1181.github.io/portfolio-files/PrizeMatcher_Component/pm_LB_Component.html", isValid: true, image: "./src/assets/prizeMatcher_Scr.png"},
-    {name: "Money Drop", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/MoneyDrop/page1.html", isValid: true, image: "./src/assets/moneyDrop_Scr.png"},
-    {name: "Money Tree", copy: "Publishers Clearing House E-Commerce Component", url: "https://vdawson1181.github.io/portfolio-files/money-tree-OB-addOn/preview.html", isValid: true, image: "./src/assets/moneyTree_Scr.png"},
-    {name: "Important Info", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Important_Info/page1.html", isValid: true, image: "./src/assets/impInfo_Scr.png"},
-    {name: "Make It Count", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Make_It_Count/page1.html", isValid: true, image: "./src/assets/makeItCount_Scr.png"},
-    {name: "Win 1MM Tonight", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Win_1MM_Tonight_V13/page1.html", isValid: true, image: "./src/assets/win1MMTonight_Scr.png"},
-    {name: "Day of Deals V4", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Day_Of_Deals_V4/page1.html", isValid: true, image: "./src/assets/dayOfdeals_Scr.png"},
-    {name: "Prize Payment Transaction", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Prize_Payment_Trans_V3/page1.html", isValid: true, image: "./src/assets/prizePayTrans_Scr.png"},
+    {name: "Prize Matcher", copy: "Publishers Clearing House Interactive Prize Component", url: "https://vdawson1181.github.io/portfolio-files/PrizeMatcher_Component/pm_LB_Component.html", isValid: true, image: prizeMatcherLogo},
+    {name: "Money Drop", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/MoneyDrop/page1.html", isValid: true, image: moneyDropLogo},
+    {name: "Money Tree", copy: "Publishers Clearing House E-Commerce Component", url: "https://vdawson1181.github.io/portfolio-files/money-tree-OB-addOn/preview.html", isValid: true, image: moneyTreeLogo},
+    {name: "Important Info", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Important_Info/page1.html", isValid: true, image: impInfoLogo},
+    {name: "Make It Count", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Make_It_Count/page1.html", isValid: true, image: makeItCountLogo},
+    {name: "Win 1MM Tonight", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Win_1MM_Tonight_V13/page1.html", isValid: true, image: winTonightLogo},
+    {name: "Day of Deals V4", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Day_Of_Deals_V4/page1.html", isValid: true, image: dayOfDealsLogo},
+    {name: "Prize Payment Transaction", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Prize_Payment_Trans_V3/page1.html", isValid: true, image: prizePayTransLogo},
   ];
   const projects = [
-    {name: "Outrun Banner", copy: "Animated Proof Of Concept", url: "https://vdawson1181.github.io/portfolio-files/Outrun/page1.html", isValid: true, image: "./src/assets/outrun_Scr.png"},
-    {name: "GSAP Bubbles Demo", copy: "Animated Proof Of Concept", url: "https://vdawson1181.github.io/portfolio-files/ParticlesDemo_3/Bubbles.html", isValid: true, image: "./src/assets/bubbles_Scr.png"},
-    {name: "Dad Joke Generator", copy: "Simple page that pulls a joke from an API. Resets in 24 Hrs", url: "https://vdawson1181.github.io/portfolio-files/Dad_Joke_Gen/dad_Joke_API.html", isValid: true, image: "./src/assets/dadJoke_Scr.png"},
+    {name: "Outrun Banner", copy: "Animated Proof Of Concept", url: "https://vdawson1181.github.io/portfolio-files/Outrun/page1.html", isValid: true, image: outrunLogo},
+    {name: "GSAP Bubbles Demo", copy: "Animated Proof Of Concept", url: "https://vdawson1181.github.io/portfolio-files/ParticlesDemo_3/Bubbles.html", isValid: true, image: bubblesLogo},
+    {name: "Dad Joke Generator", copy: "Simple page that pulls a joke from an API. Resets in 24 Hrs", url: "https://vdawson1181.github.io/portfolio-files/Dad_Joke_Gen/dad_Joke_API.html", isValid: true, image: jokesLogo},
   ];
   
 
