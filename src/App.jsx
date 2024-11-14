@@ -69,7 +69,7 @@ function App() {
           <li><a href="https://www.linkedin.com/in/vdawson647/"  target="_blank">My LinkedIn</a></li>
           <li><a href={vdResume} download="VDawson_Resume">My Resume</a></li>
           <li><a onClick={handleToggle}>My Portfolio</a></li>
-          <li><a onClick={handleToggle}>Contact Me</a></li>
+          <li><a href="mailto:VDawson647@gmail.com">Contact Me</a></li>
         </ul>
         <div className="animation">
 
